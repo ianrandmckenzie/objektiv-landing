@@ -1,0 +1,52 @@
+#body {
+	font-family: 'Source Code Pro', monospace;
+	color: #343a40;
+}
+
+.navbar-brand img {
+	max-width: 150px;
+}
+
+section {
+	height: 100vh;
+}
+
+section.one {
+	padding-top: 20%;
+	transition: 0.8s;
+}
+
+section.two, section.three, section.four {
+	margin-top: 71px;
+}
+
+section.one p {
+	margin: 35px 0px;
+}
+
+.btn.btn-dark {
+	border-radius: 0;
+	margin: 15px 0px;
+}
+
+.cta-button-container, .cta-button-container-2, .cta-button-container-3 {
+	transition: all 2s;
+}
+
+.cta-button-container .btn {
+	transition: 0s;
+}
+
+.second-magic-row, .third-magic-row {
+	margin-top: 40px;
+	transition: 0.8s;
+}
+
+#objektiv-headline {
+	display: inline;
+}
+
+.subhead {
+	font-size: 1.5rem;
+	margin-top: 20px;
+}
