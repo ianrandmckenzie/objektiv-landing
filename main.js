@@ -1,19 +1,59 @@
 $(document).ready(function(){
 	var options = {
-	  strings: ["What is your objective?", "What is your Objektiv?"],
+	  strings: ["What is your objective?",
+	  	"What is your Objektiv?"
+  	  ],
 	  smartBackspace: true,
-	  typeSpeed: 40
+	  typeSpeed: 40,
+	  showCursor: false
 	}
 
 	setTimeout(function(){
 		var typed = new Typed("#objektiv-headline", options);
 	}, 1500);
+
+	$(document).scroll(function() {
+	    var scroll_top = $(document).scrollTop();
+	    var div_one_top = $('#to-the-top').position().top;
+	    var div_two_top = $('#mobile-development-example-one').position().top;
+	    var div_three_top = $('#mobile-development-example-two').position().top;
+	    var div_four_top = $('#web-design-example').position().top;
+	    var div_five_top = $('#contact').position().top;
+
+	    if(scroll_top > div_four_top && scroll_top < div_five_top) {
+	        $('.nav-item .nav-link .sr-only').remove();
+	        $('#nav-contact .nav-link').html('Contact <span class="sr-only">(current)</span>');
+	        $('.nav-item').removeClass('active');
+	        $('#nav-contact').addClass('active');
+	    } else if(scroll_top > div_three_top && scroll_top < div_four_top) {
+	        $('.nav-item .nav-link .sr-only').remove();
+	        $('#nav-web .nav-link').html('Web <span class="sr-only">(current)</span>');
+	        $('.nav-item').removeClass('active');
+	        $('#nav-web').addClass('active');
+	    } else if(scroll_top > div_two_top && scroll_top < div_three_top) {
+	        $('.nav-item .nav-link .sr-only').remove();
+	        $('#nav-applications .nav-link').html('Applications <span class="sr-only">(current)</span>');
+	        $('.nav-item').removeClass('active');
+	        $('#nav-applications').addClass('active');
+	    } else if(scroll_top > div_one_top && scroll_top < div_two_top) {
+	        $('.nav-item .nav-link .sr-only').remove();
+	        $('#nav-mobile .nav-link').html('Mobile <span class="sr-only">(current)</span>');
+	        $('.nav-item').removeClass('active');
+	        $('#nav-mobile').addClass('active');
+	    } else if( scroll_top < div_two_top) {
+	        $('.nav-item .nav-link .sr-only').remove();
+	        $('#nav-about .nav-link').html('About <span class="sr-only">(current)</span>');
+	        $('.nav-item').removeClass('active');
+	        $('#nav-about').addClass('active');
+	    }
+	});
 });
 
 function questionnaireStageOne(object, type){
 	var options = {
-	  strings: ["What is the " + type + "\'s purpose?"],
-	  typeSpeed: 40
+	  strings: ["> What is the " + type + "\'s purpose?"],
+	  typeSpeed: 40,
+	  showCursor: false
 	}
 
 	switch(type){
@@ -69,7 +109,7 @@ function questionnaireStageOne(object, type){
 	object.parent().css("padding-left", "0px");
 	object.parent().css("padding-right", "0px");
 	object.parent().addClass("text-left");
-	object.parent().append('<h2 id="key-question" style="transition:0.8s;display:inline;padding-left:30px;"></h2>');
+	object.parent().append('<h2 id="key-question"></h2>');
 	setTimeout(function(){
 		var typed = new Typed("#key-question", options);
 
@@ -95,28 +135,30 @@ function questionnaireStageTwo(object, type){
 
 	if(type == "server"){
 		var options = {
-		  strings: ["That's totally Objektiv's wheelhouse. I'm a command line wizard."],
-		  typeSpeed: 15
+		  strings: ["> That's totally Objektiv's wheelhouse! I'm a command line wizard."],
+		  typeSpeed: 15,
+		  showCursor: false
 		}
 
 		var buttonsThirdSet = `
 	            <div class="row third-magic-row">
-	              <div class="col-4 cta-button-container-3">
+	              <div class="col-12 cta-button-container-3">
 	                <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:admin@ians.studio?subject=Server Administration">Let's have a chat.</a>
 	              </div>
 	            </div>`
 	} else {
 		var options = {
-		  strings: ["That's totally Objektiv's wheelhouse. Want to see a sample of work before we begin?"],
-		  typeSpeed: 15
+		  strings: ["> That's totally Objektiv's wheelhouse! Want to see a sample of work before we begin?"],
+		  typeSpeed: 15,
+		  showCursor: false
 		}
 
 		var buttonsThirdSet = `
 	            <div class="row third-magic-row">
-	              <div class="col-4 offset-2 cta-button-container-3">
+	              <div class="col-12 cta-button-container-3">
 	                <a class="btn btn-md btn-dark" id="marketing-yes" href="#` + id + `">Yeah! Show me what you've got.</a>
 	              </div>
-	              <div class="col-4 cta-button-container-3">
+	              <div class="col-12 cta-button-container-3">
 	                <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:admin@ians.studio?subject=Request For Proposal&body=First time writing an RFP (Request For Proposal)? Check out this article:\n https://vtldesign.com/web-strategy/web-design-web-strategy/how-to-write-a-website-design-request-for-proposal/">I'd rather have a chat.</a>
 	              </div>
 	            </div>`
@@ -129,7 +171,7 @@ function questionnaireStageTwo(object, type){
 	object.parent().css("padding-left", "0px");
 	object.parent().css("padding-right", "0px");
 	object.parent().addClass("text-left");
-	object.parent().append('<p id="key-message" style="transition:0.8s;display:inline;padding-left:30px;"></p>');
+	object.parent().append('<p id="key-message"></p>');
 	setTimeout(function(){
 		var typed = new Typed("#key-message", options);
 
