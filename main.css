@@ -35,7 +35,7 @@ section:nth-of-type(even) {
     color: #343a40;
 }
 
-#body section:nth-of-type(even) a {
+#body section:nth-of-type(even) a, footer a {
     background: #343a40;
     color: white;
 }
@@ -96,6 +96,11 @@ footer {
 	padding: 50px;
 	background-color: #343a40;
 	color: white;
+}
+
+footer a:hover {
+	color: white;
+	opacity: 0.7;
 }
 
 @media only screen and (max-width: 1200px){
