@@ -61,13 +61,13 @@ function questionnaireStageOne(object, type){
 			var buttonsSecondSet = `
 		            <div class="row second-magic-row">
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-communication" onClick="questionnaireStageTwo($('#need-communication'), 'website');" type="button">To share ideas.</button>
+		                <button class="btn btn-md btn-dark" id="need-communication" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-communication'), 'website');" type="button">To share ideas.</button>
 		              </div>
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-marketing" onClick="questionnaireStageTwo($('#need-marketing'), 'website');" type="button">To market my business.</button>
+		                <button class="btn btn-md btn-dark" id="need-marketing" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-marketing'), 'website');" type="button">To market my business.</button>
 		              </div>
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-ecommerce" onClick="questionnaireStageTwo($('#need-ecommerce'), 'website');" type="button">To sell my products online.</button>
+		                <button class="btn btn-md btn-dark" id="need-ecommerce" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-ecommerce'), 'ecommerce');" type="button">To sell products online.</button>
 		              </div>
 		            </div>`;
             break;
@@ -75,13 +75,13 @@ function questionnaireStageOne(object, type){
 			var buttonsSecondSet = `
 		            <div class="row second-magic-row">
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-promotion" onClick="questionnaireStageTwo($('#need-promotion'), 'promote');" type="button">To promote something.</button>
+		                <button class="btn btn-md btn-dark" id="need-promotion" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-promotion'), 'promote');" type="button">To promote something.</button>
 		              </div>
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-provide-service" onClick="questionnaireStageTwo($('#need-provide-service'), 'mobile app');" type="button">A service for its users.</button>
+		                <button class="btn btn-md btn-dark" id="need-provide-service" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-provide-service'), 'mobile app');" type="button">A service for its users.</button>
 		              </div>
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-tech-idea" onClick="questionnaireStageTwo($('#need-tech-idea'), 'mobile app');" type="button">My innovative tech idea.</button>
+		                <button class="btn btn-md btn-dark" id="need-tech-idea" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-tech-idea'), 'mobile app');" type="button">My innovative tech idea.</button>
 		              </div>
 		            </div>`;
             break;
@@ -89,19 +89,19 @@ function questionnaireStageOne(object, type){
 			var buttonsSecondSet = `
 		            <div class="row second-magic-row">
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-single-host" onClick="questionnaireStageTwo($('#need-single-host'), 'server');" type="button">Host for all my clients.</button>
+		                <button class="btn btn-md btn-dark" id="need-single-host" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-single-host'), 'server');" type="button">Host for all my clients.</button>
 		              </div>
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-scaling" onClick="questionnaireStageTwo($('#need-scaling'), 'server');" type="button">Prepare my site for growth.</button>
+		                <button class="btn btn-md btn-dark" id="need-scaling" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-scaling'), 'server');" type="button">Prepare my site for growth.</button>
 		              </div>
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-cheaper" onClick="questionnaireStageTwo($('#need-cheaper'), 'server');" type="button">Migrate to cheaper hosting.</button>
+		                <button class="btn btn-md btn-dark" id="need-cheaper" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-cheaper'), 'server');" type="button">Migrate to cheaper hosting.</button>
 		              </div>
 		            </div>`;
             break;
 	}
 
-	$("section.one").css("padding-top", "80px");
+	$("section.one").css("padding-top", "96px");
 	$(".cta-button-container .btn").hide();
 	object.css("margin", "0px")
 	object.show();
@@ -130,6 +130,9 @@ function questionnaireStageTwo(object, type){
 			break;
 		case "mobile app":
 			var id = "mobile-development-example-two";
+			break;
+		case "ecommerce":
+			var id = "mobile-development-example-one";
 			break;
 	}
 
