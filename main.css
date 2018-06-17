@@ -102,6 +102,10 @@ section.one p {
 	margin-bottom: 15px;
 }
 
+.modal-image-link {
+	cursor: pointer;
+}
+
 footer {
 	padding: 50px;
 	background-color: #343a40;
