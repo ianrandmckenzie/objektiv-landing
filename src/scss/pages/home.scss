@@ -1,39 +1,139 @@
-// BEGIN: Delete this later
-#Boilerplate {
-  width: 100%;
-  height: 100%;
+#body {
+  font-family: 'Source Code Pro', monospace;
+  color: #343a40;
+}
 
-  background: color(pearl);
+#body p {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.2px;
+}
 
-  .wrapper {
-    margin-top: ws(large);
-    position: relative;
-    z-index: 1;
+.navbar-brand img {
+  max-width: 150px;
+  max-height: 40px;
+}
 
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -10%;
-      display: block;
-      width: 100%;
-      height: 50%;
-      background: color(blue);
-      z-index: -1;
-    }
+section.one {
+  padding-top: 20%;
+  transition: 0.8s;
+  min-height: 100vh;
+}
 
-    .view-gh {
-      display: inline-block;
-      color: color(grey);
-      transition: color 0.1s;
+section.two, section.three, section.four, section.five {
+  padding: 190px 0px;
+}
 
-      &:hover {
-        color: color(white);
-      }
-    }
+section:nth-of-type(odd) {
+    background: white;
+}
 
-    .title {
-      color: color(black);
-    }
+section:nth-of-type(even) {
+    background: #343a40;
+    color: white;
+}
+
+section:nth-of-type(even) p, footer p {
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+#body a {
+  text-decoration: underline;
+}
+
+#body section:nth-of-type(odd) a {
+    background: white;
+    color: #343a40;
+}
+
+#body section:nth-of-type(even) a, footer a {
+    background: #343a40;
+    color: white;
+}
+
+#body .btn-dark.btn {
+  text-decoration: none;
+  color: white;
+  background: #343a40;
+}
+
+section.one p {
+  margin: 35px 0px;
+}
+
+.btn.btn-dark {
+  border-radius: 0;
+  margin: 15px 0px;
+}
+
+.cta-button-container, .cta-button-container-2, .cta-button-container-3 {
+  transition: all 2s;
+}
+
+.cta-button-container .btn {
+  transition: 0s;
+}
+
+.second-magic-row, .third-magic-row {
+  margin-top: 40px;
+  transition: 0.8s;
+}
+
+#key-question, #key-message {
+  transition:0.8s;
+  display:inline;
+  padding-left:30px;
+}
+
+#objektiv-headline {
+  display: inline;
+}
+
+.subhead {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#nav {
+  border-bottom: 1px solid #343a40;
+  background-color: #ffffff;
+}
+
+.portfolio-bar-image {
+  margin-bottom: 15px;
+}
+
+.modal-image-link {
+  cursor: pointer;
+}
+
+footer {
+  padding: 50px;
+  background-color: #343a40;
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1200px){
+  #body #key-question, #body #key-message {
+    display: block;
+    padding-left: 15px;
+    margin-top: 15px;
+  }
+
+  #body .btn-lg.btn {
+    margin-left: -15px;
+  }
+
+  .third-magic-row {
+    margin-bottom: 40px;
+  }
+
+  section.two, section.three, section.four, section.five {
+    padding: 95px 0px;
   }
 }
-// END: Delete this later

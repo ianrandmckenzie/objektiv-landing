@@ -1,56 +1,419 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Boilerplate</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta property="og:description" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:title" content="">
+    <title>Objektiv Digital | Design &amp; Development for Web, Mobile, Servers</title>
+    <meta name="description" content="Objektiv Digital designs and develops web, mobile, and server solutions in the Comox Valley and beyond." />
+    <meta name="keywords" content="mobile-development-comox-valley,mobile-development-courtenay,web-development-comox-valley,web-development-courtenay,startup-developer,web-design-courtenay,web-design-comox-valley,freelance-developer-comox-valley,freelance-designer-comox-valley,tech-solutions-comox-valley" />
+    <meta name="author" content="Ian Rand McKenzie" />
+
+    <meta property="og:site_name" content="Ian Rand McKenzie"/>
+    <meta property="og:title" content="Objektiv Digital | Design &amp; Development for Web, Mobile, Servers"/>
+    <meta property="og:description" content="Objektiv Digital designs and develops web, mobile, and server solutions in the Comox Valley and beyond.">
+    <meta property="og:image" content="https://objektiv.digital/images/objektiv-og-image.png">
+    <meta property="og:url" content="https://objektiv.digital">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:domain" content="">
+    <meta name="twitter:site" content="@ianrandmckenzie">
+    <meta name="twitter:title" content="Objektiv Digital | Design &amp; Development for Web, Mobile, Servers">
+    <meta name="twitter:description" content="Objektiv Digital designs and develops web, mobile, and server solutions in the Comox Valley and beyond.">
+    <meta name="twitter:image" content="https://objektiv.digital/images/objektiv-og-image.png">
+    <meta name="twitter:domain" content="https://objektiv.digital">
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="">
-    <link rel="apple-touch-icon" href="" sizes="120x120">
-
-    <!-- Stylesheets -->
-    <link href='http://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-
-     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXXXXX-X', 'auto');
-      ga('require', 'linkid', 'linkid.js');
-      ga('send', 'pageview');
-    </script>
   </head>
-  <body>
-    <main id="Boilerplate">
-<div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <h2 class="title"><a href="https://github.com/jadnco/boilerplate" title="View on GitHub">Boilerplate</a></h2>
+  <body id="body"><div class="anchor" id="to-the-top"></div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" id="nav">
+  <a class="navbar-brand" href="/"><img src="images/objektiv-logo.png" class="img-fluid" alt="Logo for Objektiv Digital"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" id="nav-about">
+        <a class="nav-link" href="#to-the-top">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" id="nav-mobile">
+        <a class="nav-link" href="#mobile-development-example-one">Mobile</a>
+      </li>
+      <li class="nav-item" id="nav-applications">
+        <a class="nav-link" href="#mobile-development-example-two">Applications</a>
+      </li>
+      <li class="nav-item" id="nav-web">
+        <a class="nav-link" href="#web-design-example">Web</a>
+      </li>
+      <li class="nav-item" id="nav-contact">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav><section class="one">
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-12" id="where-the-magic-happens">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1 id="objektiv-headline">What is your objective?</h1>
+            <h2 class="subhead">Let's find out if your awesome idea matches up with with my awesome code.</h2>
+            <p>Objektiv Digital is a freelance venture by Ian McKenzie. He designs and develops interactive experiences on web browsers and mobile devices, and manages the systems that support them.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 cta-button-container">
+            <button class="btn btn-lg btn-dark" id="need-website" onClick="$(this).attr('onClick','');questionnaireStageOne($('#need-website'), 'website');" type="button">I need a website.</button>
+          </div>
+          <div class="col-12 cta-button-container">
+            <button class="btn btn-lg btn-dark" id="need-mobile" onClick="$(this).attr('onClick','');questionnaireStageOne($('#need-mobile'), 'mobile app');" type="button">I need a mobile app.</button>
+          </div>
+          <div class="col-12 cta-button-container">
+            <button class="btn btn-lg btn-dark" id="need-setup" onClick="$(this).attr('onClick','');questionnaireStageOne($('#need-setup'), 'server setup');" type="button">I need my server set up.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="anchor" id="mobile-development-example-one"></div>
+<section class="three">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="get" id="mobile-app">
+              Mobile Application Development
+            </h3>
+            <h4>Curious Markings Co.</h4>
+            <h5>January 2018 - Present</h5>
+            <p class="text-left portfolio-info">
+              Curious Markings is a mobile game that creates an interactive experience from these rather curious markings created by a schizophrenic artist. Team up with players around the world to help unlock the mysterious stories attached to each marking. See photos that were captured at marking locations, and try to collect all markings. Curious Markings is primarily monetized by an online e-commerce store.
+            </p>
+            <p class="text-left portfolio-info">
+              <a class="social-portfolio" target="_blank" href="https://ians.studio/articles/introducing-curious-markings-co">Curious Markings isn't just an app – read more about the entire project here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/mobile_app_development/camera.png" alt="Screenshot of the Curious Markings app camera view" data-toggle="modal" data-target="#cmc1" />
+          </div>
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/mobile_app_development/map.png" alt="Screenshot of the Curious Markings app map view" data-toggle="modal" data-target="#cmc2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="anchor" id="mobile-development-example-two"></div>
+<section class="four">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="get" id="web-app">
+          Web Application Development
+        </h3>
+        <h4>Stridr</h4>
+        <h5>July 2016 - Dec. 2017</h5>
+        <p class="text-left portfolio-info">
+          Stridr was a web application that looked at everything you like on social media and presented it all in a single, chronological feed. It made suggestions for new things you might like, and offered fine grain customization over your aggregated social feed. Before being set aside, Stridr's powerful back end was being utilized for creating mobile versions on Android and iOS.
+        </p>
+        <p class="text-left portfolio-info">
+          <a class="social-portfolio" target="_blank" href="https://ians.studio/articles/stridr-case-study">Read more about Stridr here.</a>
+        </p>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/web_app_development/stridr-logo.png" alt="The Stridr logo" data-toggle="modal" data-target="#stridr1" />
+          </div>
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/web_app_development/stridr_1.png" alt="Screenshot of the Stridr chronological social feed" data-toggle="modal" data-target="#stridr2" />
+          </div>
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/web_app_development/stridr_2.png" alt="Screenshot of a Stridr user's profile" data-toggle="modal" data-target="#stridr3" />
+          </div>
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/web_app_development/stridr_3.png" alt="Screenshot of Stridr's login view" data-toggle="modal" data-target="#stridr4" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="anchor" id="web-design-example"></div>
+<section class="two">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="get" id="web-design">
+          Web &amp; Mobile Design
+        </h3>
+        <h4>NIC Interactive Media</h4>
+        <h5>June 2017 - Aug. 2017</h5>
+        <p class="text-left portfolio-info">
+          North Island College's Interactive Media program is the reason Objektiv Digital exists. After killing it in a class project with Matt Boucher and Brittany King aimed to re-design the program's website, the program hired us as interns to re-design the website for real. Led by instructor Megan Wilson, we re-designed our re-design to conform with college policies and to make it clear and understandable to an international audience.
+        </p>
+        <p class="text-left portfolio-info">
+          <a class="social-portfolio" target="_blank" href="http://nicinteractive.media/how-we-made-this.html">Read more about my involvement here.</a>
+        </p>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/web_design/im_logo.jpg" alt="Screenshot of the NIC Interactive Media's logo" data-toggle="modal" data-target="#nicim0" />
+          </div>
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/web_design/nicim1.png" alt="Screenshot of the NIC Interactive Media's landing page" data-toggle="modal" data-target="#nicim1" />
+          </div>
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/web_design/nicim3.png" alt="Screenshot of the NIC Interactive Media's alumni page" data-toggle="modal" data-target="#nicim3" />
+          </div>
+          <div class="col-md-6 col-xs-12 portfolio-bar-image">
+            <img class="img-fluid modal-image-link" src="images/portfolio_pieces/web_design/nicim2.gif" alt="A prototype for the 'current students' page on http://nicinteractive.media" data-toggle="modal" data-target="#nicim2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="anchor" id="contact"></div>
+<section class="five">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 text-left">
+        <h2>Let's discuss how I can make your digital life easier.</h2>
+        <p>I love to make cool stuff! Do you? Let's sync up our brain waves and make magic happen. I've got the code editor, you've got what people want; let's concoct a digital potion and make them fall in love!</p>
+        <div class="row">
+          <div class="col-12">
+            <a class="btn btn-lg btn-dark" href="mailto:admin@ians.studio">Send an email.</a>
+          </div>
+          <div class="col-12">
+            <a class="btn btn-lg btn-dark" href="tel:12502048402">Make a phone call.</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img src="images/ian.jpg" class="img-fluid" alt="Photograph of Ian McKenzie with a mischievous look on his face while sitting at a restaurant.">
+        <caption><i>Ian McKenzie: designer &amp; developer @ Objektiv Digital</i></caption>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Curious Markings -->
+<!-- Modal -->
+<div class="modal fade" id="cmc1" tabindex="-1" role="dialog" aria-labelledby="cmc1Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of the Curious Markings app camera view</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/mobile_app_development/camera.png" alt="Screenshot of the Curious Markings app camera view" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="cmc2" tabindex="-1" role="dialog" aria-labelledby="cmc2Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of the Curious Markings app map view</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/mobile_app_development/map.png" alt="Screenshot of the Curious Markings app map view" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="cmc3" tabindex="-1" role="dialog" aria-labelledby="cmc3Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of the Curious Markings app sign up view</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/mobile_app_development/sign_up.png" alt="Screenshot of the Curious Markings app sign up view" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="cmc4" tabindex="-1" role="dialog" aria-labelledby="cmc3Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of the Curious Markings app user profile view</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/mobile_app_development/profile.png" alt="Screenshot of the Curious Markings app user profile view" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>
 
-    </main>
+<!-- Stridr -->
+<!-- Modal -->
+<div class="modal fade" id="stridr2" tabindex="-1" role="dialog" aria-labelledby="stridr1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of the Stridr chronological social feed</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/web_app_development/stridr_1.png" alt="Screenshot of the Stridr chronological social feed" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="stridr1" tabindex="-1" role="dialog" aria-labelledby="stridr2Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">The Stridr logo</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/web_app_development/stridr-logo.png" alt="The Stridr logo" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="stridr3" tabindex="-1" role="dialog" aria-labelledby="stridr3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of a Stridr user's profile</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/web_app_development/stridr_2.png" alt="Screenshot of a Stridr user's profile" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="stridr4" tabindex="-1" role="dialog" aria-labelledby="stridr3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of the Stridr login screen</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/web_app_development/stridr_3.png" alt="Screenshot of the Stridr login screen" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NIC Interactive Media -->
+<!-- Modal -->
+<div class="modal fade" id="nicim0" tabindex="-1" role="dialog" aria-labelledby="nicim1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">The NIC Interactive Media program's logo</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/web_design/im_logo.jpg" alt="The NIC Interactive Media program's logo" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="nicim1" tabindex="-1" role="dialog" aria-labelledby="nicim1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of the NIC Interactive Media's landing page</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/web_design/nicim1.png" alt="Screenshot of the NIC Interactive Media's landing page" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="nicim2" tabindex="-1" role="dialog" aria-labelledby="nicim2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">A prototype for the 'current students' page</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/web_design/nicim2.gif" alt="A prototype for the 'current students' page on http://nicinteractive.media" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="nicim3" tabindex="-1" role="dialog" aria-labelledby="nicim3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <h5 class="modal-title">Screenshot of the NIC Interactive Media's alumni page</h5>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/portfolio_pieces/web_design/nicim3.png" alt="Screenshot of the NIC Interactive Media's alumni page" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer>
+      <div class="container">
+        <div class="row text-left">
+          <div class="col-12 col-sm-4">
+            <strong>Objektiv Digital</strong>
+            <p>© <a target="_blank" href="https://ians.studio">Ian Rand McKenzie</a> 2018</p>
+            <strong>Social</strong>
+            <p>
+              <a target="_blank" href="https://www.github.com/ianrandmckenzie">GitHub</a> • 
+              <a target="_blank" href="https://www.dribbble.com/ianrandmckenzie">Dribbble</a> • 
+              <a target="_blank" href="https://www.instagram.com/objektivdigital">Instagram</a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-4">
+            <strong>gilakas’la / čɛčɛ haθɛč</strong>
+            <p>I respectfully and gratefully acknowledge that I live, work and play within the traditional territory of the K’ómoks Nation.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/libs/popper.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/typed.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
