@@ -146,7 +146,7 @@ function questionnaireStageTwo(object, type){
 		var buttonsThirdSet = `
 	            <div class="row third-magic-row">
 	              <div class="col-12 cta-button-container-3">
-	                <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:admin@ians.studio?subject=Server Administration">Let's have a chat.</a>
+	                <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:ian@objektiv.digital?subject=Server Administration">Let's have a chat.</a>
 	              </div>
 	            </div>`
 	} else {
@@ -162,7 +162,7 @@ function questionnaireStageTwo(object, type){
 	                <a class="btn btn-md btn-dark" id="marketing-yes" href="#` + id + `">Yeah! Show me what you've got.</a>
 	              </div>
 	              <div class="col-12 cta-button-container-3">
-	                <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:admin@ians.studio?subject=Request For Proposal&body=First time writing an RFP (Request For Proposal)? Check out this article:\n https://vtldesign.com/web-strategy/web-design-web-strategy/how-to-write-a-website-design-request-for-proposal/">I'd rather have a chat.</a>
+	                <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:ian@objektiv.digital?subject=Request For Proposal&body=First time writing an RFP (Request For Proposal)? Check out this article:\n https://vtldesign.com/web-strategy/web-design-web-strategy/how-to-write-a-website-design-request-for-proposal/">I'd rather have a chat.</a>
 	              </div>
 	            </div>`
 	}
