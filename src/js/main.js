@@ -15,31 +15,19 @@ $(document).ready(function(){
 	$(document).scroll(function() {
 	    var scroll_top = $(document).scrollTop();
 	    var div_one_top = $('#to-the-top').position().top;
-	    var div_two_top = $('#mobile-development-example-one').position().top;
-	    var div_three_top = $('#mobile-development-example-two').position().top;
-	    var div_four_top = $('#web-design-example').position().top;
-	    var div_five_top = $('#contact').position().top;
+	    var div_two_top = $('#portfolio').position().top;
+	    var div_three_top = $('#contact').position().top;
 
-	    if(scroll_top > div_four_top && scroll_top < div_five_top) {
+	    if(scroll_top > div_two_top && scroll_top < div_three_top) {
 	        $('.nav-item .nav-link .sr-only').remove();
 	        $('#nav-contact .nav-link').html('Contact <span class="sr-only">(current)</span>');
 	        $('.nav-item').removeClass('active');
 	        $('#nav-contact').addClass('active');
-	    } else if(scroll_top > div_three_top && scroll_top < div_four_top) {
-	        $('.nav-item .nav-link .sr-only').remove();
-	        $('#nav-web .nav-link').html('Web <span class="sr-only">(current)</span>');
-	        $('.nav-item').removeClass('active');
-	        $('#nav-web').addClass('active');
-	    } else if(scroll_top > div_two_top && scroll_top < div_three_top) {
-	        $('.nav-item .nav-link .sr-only').remove();
-	        $('#nav-applications .nav-link').html('Applications <span class="sr-only">(current)</span>');
-	        $('.nav-item').removeClass('active');
-	        $('#nav-applications').addClass('active');
 	    } else if(scroll_top > div_one_top && scroll_top < div_two_top) {
 	        $('.nav-item .nav-link .sr-only').remove();
-	        $('#nav-mobile .nav-link').html('Mobile <span class="sr-only">(current)</span>');
+	        $('#nav-portfolio .nav-link').html('Portfolio <span class="sr-only">(current)</span>');
 	        $('.nav-item').removeClass('active');
-	        $('#nav-mobile').addClass('active');
+	        $('#nav-portfolio').addClass('active');
 	    } else if( scroll_top < div_two_top) {
 	        $('.nav-item .nav-link .sr-only').remove();
 	        $('#nav-about .nav-link').html('About <span class="sr-only">(current)</span>');

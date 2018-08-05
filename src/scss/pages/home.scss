@@ -23,16 +23,25 @@ section.two, section.three, section.four, section.five {
   padding: 190px 0px;
 }
 
-section:nth-of-type(odd) {
+section:nth-of-type(even) {
     background: white;
 }
 
-section:nth-of-type(even) {
+#body section.one {
+  color: #343a40;
+  background-color: white;
+}
+
+#body section.one p {
+  font-weight: 400;
+}
+
+section:nth-of-type(odd) {
     background: #343a40;
     color: white;
 }
 
-section:nth-of-type(even) p, footer p {
+section:nth-of-type(odd) p, footer p {
   font-weight: 300;
   letter-spacing: 0.2px;
 }
@@ -41,12 +50,14 @@ section:nth-of-type(even) p, footer p {
   text-decoration: underline;
 }
 
-#body section:nth-of-type(odd) a {
+#body section:nth-of-type(even) a {
     background: white;
     color: #343a40;
 }
 
-#body section:nth-of-type(even) a, footer a {
+#body section:nth-of-type(odd) a, 
+footer a,
+#body section.one a {
     background: #343a40;
     color: white;
 }
