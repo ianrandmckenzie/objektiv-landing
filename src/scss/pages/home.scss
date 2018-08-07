@@ -129,6 +129,10 @@ footer a:hover {
   opacity: 0.7;
 }
 
+.modal-title {
+  padding: 15px 0 0 15px;
+}
+
 @media only screen and (max-width: 1200px){
   #body #key-question, #body #key-message {
     display: block;

@@ -111,7 +111,7 @@ function questionnaireStageTwo(object, type){
 
 	switch(type){
 		case "website":
-			var id = "web-design-example";
+			var id = "web-design-example-two";
 			break;
 		case "promote":
 			var id = "mobile-development-example-one";
