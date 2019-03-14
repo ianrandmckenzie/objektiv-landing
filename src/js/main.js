@@ -57,6 +57,9 @@ function questionnaireStageOne(object, type){
 		              <div class="col-12 cta-button-container-2">
 		                <button class="btn btn-md btn-dark" id="need-ecommerce" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-ecommerce'), 'ecommerce');" type="button">To sell products online.</button>
 		              </div>
+                  <div class="col-12 cta-button-container-2">
+                    <button class="btn btn-md btn-dark" id="need-artist" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-artist'), 'artist');" type="button">To show off my art.</button>
+                  </div>
 		            </div>`;
             break;
         case "mobile app":
@@ -122,6 +125,9 @@ function questionnaireStageTwo(object, type){
 		case "ecommerce":
 			var id = "mobile-development-example-one";
 			break;
+    case "artist":
+      var id = "artist-portfolio-example"
+      break;
 	}
 
 	if(type == "server"){
