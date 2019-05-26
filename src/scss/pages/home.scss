@@ -1,6 +1,7 @@
 #body {
   font-family: 'Source Code Pro', monospace;
   color: #343a40;
+  overflow-x: hidden;
 }
 
 #body p {
@@ -11,6 +12,10 @@
 .navbar-brand img {
   max-width: 150px;
   max-height: 40px;
+}
+
+section {
+  overflow-x: hidden;
 }
 
 section.one {
@@ -146,6 +151,10 @@ footer a:hover {
 
   .third-magic-row {
     margin-bottom: 40px;
+  }
+
+  section.one {
+    padding-top: 22%;
   }
 
   section.two, section.three, section.four, section.five {
