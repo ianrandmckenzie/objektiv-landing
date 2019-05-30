@@ -9094,7 +9094,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 #body {
   font-family: 'Source Code Pro', monospace;
-  color: #343a40; }
+  color: #343a40;
+  overflow-x: hidden; }
 
 #body p {
   font-family: 'Source Sans Pro', sans-serif;
@@ -9104,8 +9105,11 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 150px;
   max-height: 40px; }
 
+section {
+  overflow-x: hidden; }
+
 section.one {
-  padding-top: 20%;
+  padding-top: 15%;
   transition: 0.8s;
   min-height: 100vh; }
 
@@ -9208,6 +9212,8 @@ footer a:hover {
     margin-left: -15px; }
   .third-magic-row {
     margin-bottom: 40px; }
+  section.one {
+    padding-top: 22%; }
   section.two, section.three, section.four, section.five {
     padding: 95px 0px; } }
 

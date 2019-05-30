@@ -38,11 +38,19 @@ $(document).ready(function(){
 });
 
 function questionnaireStageOne(object, type){
-	var options = {
-	  strings: ["> What is the " + type + "\'s purpose?"],
-	  typeSpeed: 40,
-	  showCursor: false
-	}
+  if(type == "social ad") {
+    var options = {
+      strings: ["> Which platform do you want to integrate your website with?"],
+      typeSpeed: 40,
+      showCursor: false
+    }
+  } else {
+    var options = {
+      strings: ["> What is the " + type + "\'s purpose?"],
+      typeSpeed: 40,
+      showCursor: false
+    }
+  }
 
 	switch(type){
 		case "website":
@@ -76,18 +84,21 @@ function questionnaireStageOne(object, type){
 		              </div>
 		            </div>`;
             break;
-        case "server setup":
+        case "social ad":
 			var buttonsSecondSet = `
 		            <div class="row second-magic-row">
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-single-host" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-single-host'), 'server');" type="button">Host for all my clients.</button>
+		                <button class="btn btn-md btn-dark" id="need-facebook" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-facebook'), 'social');" type="button">Facebook.</button>
 		              </div>
 		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-scaling" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-scaling'), 'server');" type="button">Prepare my site for growth.</button>
+		                <button class="btn btn-md btn-dark" id="need-instagram" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-instagram'), 'social');" type="button">Instagram.</button>
 		              </div>
-		              <div class="col-12 cta-button-container-2">
-		                <button class="btn btn-md btn-dark" id="need-cheaper" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-cheaper'), 'server');" type="button">Migrate to cheaper hosting.</button>
-		              </div>
+                  <div class="col-12 cta-button-container-2">
+                    <button class="btn btn-md btn-dark" id="need-pinterest" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-pinterest'), 'social');" type="button">Pinterest.</button>
+                  </div>
+                  <div class="col-12 cta-button-container-2">
+                    <button class="btn btn-md btn-dark" id="need-other" onClick="$(this).attr('onClick','');questionnaireStageTwo($('#need-other'), 'social-other');" type="button">Other / Help me choose.</button>
+                  </div>
 		            </div>`;
             break;
 	}
@@ -130,9 +141,9 @@ function questionnaireStageTwo(object, type){
       break;
 	}
 
-	if(type == "server"){
+	if(type == "social"){
 		var options = {
-		  strings: ["> That's totally Objektiv's wheelhouse! I'm a command line wizard."],
+		  strings: ["> That's totally Objektiv's wheelhouse! Running social ads is a pain. Luckily, we have the know-how when it comes to creating ad creative to each platforms' specifications, the code to integrate conversion tracking with your website, and a comprehensive understanding of each platforms' ad interface."],
 		  typeSpeed: 15,
 		  showCursor: false
 		}
@@ -140,10 +151,23 @@ function questionnaireStageTwo(object, type){
 		var buttonsThirdSet = `
 	            <div class="row third-magic-row">
 	              <div class="col-12 cta-button-container-3">
-	                <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:ian@objektiv.digital?subject=Server Administration">Let's have a chat.</a>
+	                <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:ian@objektiv.digital?subject=Social Ads">Let's have a chat about what that looks like.</a>
 	              </div>
 	            </div>`
-	} else {
+	} else if(type == "social-other") {
+    var options = {
+      strings: ["> Twitter. LinkedIn. Reddit. Pinterest. Instagram. And many more. Which platform is your audience on? We can help you make an informed decision and assist in getting ads optimized for the platform you choose."],
+      typeSpeed: 15,
+      showCursor: false
+    }
+
+    var buttonsThirdSet = `
+              <div class="row third-magic-row">
+                <div class="col-12 cta-button-container-3">
+                  <a class="btn btn-md btn-dark" id="marketing-no" href="mailto:ian@objektiv.digital?subject=Social Ads">Let's talk more!</a>
+                </div>
+              </div>`
+  } else {
 		var options = {
 		  strings: ["> That's totally Objektiv's wheelhouse! Want to see a sample of work before we begin?"],
 		  typeSpeed: 15,
